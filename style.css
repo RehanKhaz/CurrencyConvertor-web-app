@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(156, 219, 166);
+}
+
+.container {
+  background-color: rgb(222, 249, 196);
+  min-height: 50vh;
+  width: 45vh;
+  border-radius: 1rem;
+  padding: clamp(1.2rem, 1.3rem, 1.5rem);
+}
+
+.container img{
+  height: 5rem;
+  width: 5rem;
+}
+
+.container .logo{
+  width: 100%;
+  text-align: center;
+}
+
+.amount {
+  margin-top: 0.6rem;
+}
+
+.amount input {
+  width: 100%;
+  height: 2rem;
+  font-size:clamp(1.1rem,1.3rem, 1.5rem);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  text-indent: 1.2rem;
+  margin-top: .5rem;
+}
+
+
+
+.drop-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.drop-list img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.drop-list select {
+  height: 2rem;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.drop-list i {
+  font-size:clamp(1.4rem, 1.7rem, 2rem);
+}
+
+.convertedAmount {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align:center;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  height: 2rem;
+  margin-top: 1rem;
+  font-size: 1.12rem;
+  color: white;
+  background-color: 
+  rgb(70, 133, 133);
+  cursor:pointer
+}
+
+.from,
+.to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+ .container h1{
+  font-size: clamp(1.1rem, 1.3rem, 1.4rem);
+  width: 100%;
+  text-align: center;
+ }
+
+ button:active{
+  background-color: white;
+  color: rgb(70, 133, 133);
+ }
+
+
+@media screen and ( width < 400px) {
+  .container{
+    width: 75%
+  }  
+}
